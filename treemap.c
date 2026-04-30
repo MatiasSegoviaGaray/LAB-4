@@ -43,8 +43,14 @@ TreeNode * createTreeNode(void* key, void * value) {
 // Reserve memoria, inicialice el resto de variables y retorne el mapa.
     
 TreeMap * createTreeMap(int (*lower_than) (void* key1, void* key2)) {
+    
+    TreeMap * mapa = (TreeMap*) malloc(sizeof(TreeMap));
+    if(mapa == NULL) return NULL;
 
-    //map->lower_than = lower_than;
+    mapa -> current = NULL;
+    mapa -> root = NULL
+    map->lower_than = lower_than;
+    
     return NULL;
 }
 
