@@ -63,7 +63,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
     tree -> current = tree -> root;
     
     while(key != tree -> current -> pair -> key){
-        aux = tree -> current -> pair -> key;
+        TreeMap *aux = tree -> current -> pair -> key;
         if(lower_than(aux, key) == 1) tree -> current = tree -> current -> right;
         else tree -> current = tree -> current -> left;
         if(tree -> current -> right == NULL && tree -> current -> left == NULL) return NULL;
