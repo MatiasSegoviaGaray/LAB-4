@@ -72,6 +72,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
         
         if(tree -> current -> right == NULL && tree -> current -> left == NULL) return NULL;
     }
+    return NULL;
 }
 
 // 3. Implemente la función void insertTreeMap(TreeMap * tree, void* key, void * value). 
