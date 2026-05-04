@@ -232,11 +232,11 @@ Pair * upperBound(TreeMap * tree, void* key) {
 
     while(aux != NULL){
         void * auxKey = aux -> pair -> key;
-        if(is_equal(tree, key, aux_key)){
+        if(is_equal(tree, key, auxKey)){
             tree -> current = aux;
             return aux -> pair;
         }
-        if(tree -> lower_than(key, aux_key) == 1){
+        if(tree -> lower_than(key, auxKey) == 1){
             lol = aux;
             aux = aux -> left;
         }
