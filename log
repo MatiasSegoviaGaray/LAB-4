@@ -202,3 +202,19 @@ Mon May  4 02:56:45 AM UTC 2026:
  tests:  25|1
 total_score: 50/60
 1c9a7e9
+Mon May  4 03:00:00 AM UTC 2026: 
+ treemap.c | 24 ++++++++++++++++++++++++
+ 1 file changed, 24 insertions(+)
+Compilation failed
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:235:32: error: ‘aux_key’ undeclared (first use in this function); did you mean ‘auxKey’?
+  235 |         if(is_equal(tree, key, aux_key)){
+      |                                ^~~~~~~
+      |                                auxKey
+treemap.c:235:32: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:234:16: error: unused variable ‘auxKey’ [-Werror=unused-variable]
+  234 |         void * auxKey = aux -> pair -> key;
+      |                ^~~~~~
+cc1: all warnings being treated as errors
+399f3a8
