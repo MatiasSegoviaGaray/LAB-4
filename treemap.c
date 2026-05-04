@@ -204,7 +204,7 @@ Pair * nextTreeMap(TreeMap * tree) {
         sigNodo = minimum(aux -> right);
     }
     else{
-        TreeNode* padre = n -> parent;
+        TreeNode* padre = aux -> parent;
         while(padre != NULL && aux == padre -> right){
             aux = padre;
             padre = padre -> parent;
