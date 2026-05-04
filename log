@@ -162,3 +162,16 @@ Mon May  4 02:44:17 AM UTC 2026:
  tests:  15|4
 total_score: 25/60
 c11787d
+Mon May  4 02:50:37 AM UTC 2026: 
+ treemap.c | 33 +++++++++++++++++++++++++++++++++
+ 1 file changed, 33 insertions(+)
+Compilation failed
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:138:45: error: ‘return’ with a value, in function returning void [-Wreturn-mismatch]
+  138 |     if(tree == NULL || node == NULL) return NULL;
+      |                                             ^~~~
+treemap.c:137:6: note: declared here
+  137 | void removeNode(TreeMap * tree, TreeNode* node) {
+      |      ^~~~~~~~~~
+0a33256
