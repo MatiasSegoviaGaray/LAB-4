@@ -181,3 +181,14 @@ Mon May  4 02:51:18 AM UTC 2026:
  tests:  18|3
 total_score: 35/60
 fe97548
+Mon May  4 02:56:10 AM UTC 2026: 
+ treemap.c | 28 +++++++++++++++++++++++++++-
+ 1 file changed, 27 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:
+treemap.c: In function ‘nextTreeMap’:
+treemap.c:207:27: error: ‘n’ undeclared (first use in this function)
+  207 |         TreeNode* padre = n -> parent;
+      |                           ^
+treemap.c:207:27: note: each undeclared identifier is reported only once for each function it appears in
+a453cbf
